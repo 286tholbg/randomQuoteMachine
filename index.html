@@ -5,27 +5,50 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-
+        <link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src="app.js"></script>
-
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        <div id="wrapper">
+            <div id="quote-box">
+                <div class="quote-text">
+                    <i class="fa fa-quote-left"></i>
+                    <span id="text"></span>
+                </div>
+                <div class="quote-author">- <span id="author"></span></div>
+                <div class="buttons">
+                    <button 
+                        id="new-quote" 
+                        onClick="generateQuote()" 
+                        class="button">New Quote
+                    </button>
 
-        <wrapper id="quote-box">
-                <div id="text"></div>
-                <div id="author"></div>
-                <button id="new-quote" onClick="generateQuote()">New Quote</button>
-                <a target="_blank" class="button" href="#" id="tweet-quote">Tweet Quote</a>
-        </wrapper>
+                    <a 
+                        target="_blank" 
+                        title="Tweet this quote!"
+                        target="_blank"
+                        class="button"
+                        href="#" 
+                        id="tweet-quote">
+
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            By <a href="https://github.com/286tholbg" target="_blank">Gatluak Tholbok</a>
+        </div>
     </body>
 </html>

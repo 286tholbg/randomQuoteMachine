@@ -1,5 +1,4 @@
 
-
 window.onload = init;
 function init () {
     console.log("JS Loaded");
@@ -53,7 +52,5 @@ function generateQuote(){
     twitterLink += quotesObj[randomQuote].quote + " - "+ quotesObj[randomQuote].author
 
     document.getElementById("tweet-quote").href = twitterLink;
-
-    https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=The%20secret%20of%20getting%20ahead%20is%20getting%20started%20-%20Mark%20Twain
-
 }
+init();

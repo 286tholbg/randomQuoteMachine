@@ -41,7 +41,13 @@ const quotesObj = [
 ]
 
 function generateQuote(){
+
+    let randomQuote = Math.floor(Math.random() * quotesObj.length);
+    console.log(randomQuote)
+
     console.log("quote generated");
-    document.getElementById("text").innerText = "Gatluak Tholbok"
-    document.getElementById("author").innerText = "Gat Tholbok"
+    document.getElementById("text").innerText = quotesObj[randomQuote].quote
+    document.getElementById("author").innerText = quotesObj[randomQuote].author
 }
+
+generateQuote();

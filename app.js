@@ -1,8 +1,6 @@
 
-window.onload = init;
-function init () {
-    console.log("JS Loaded");
-}
+
+window.onload = generateQuote;
 
 const quotesObj = [
     {

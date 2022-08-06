@@ -35,7 +35,7 @@ const quotesObj = [
         author: "Zig Ziglar",
         quote: "You don’t have to be great to start, but you have to start to be great"
     },
-]
+];
 
 function generateQuote(){
 
@@ -50,5 +50,4 @@ function generateQuote(){
     twitterLink += quotesObj[randomQuote].quote + " - "+ quotesObj[randomQuote].author
 
     document.getElementById("tweet-quote").href = twitterLink;
-}
-init();
+};
